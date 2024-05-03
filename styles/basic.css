@@ -6,3 +6,21 @@ body{
     background: linear-gradient(0, rgb(9, 92, 94) 0%, rgba(0,0,0,1) 100%);
     color: white;
 }
+
+p{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.under-construction{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    border-width: 0px;
+    
+}
