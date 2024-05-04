@@ -27,6 +27,15 @@
             });
         });
     });
+
+    searchInput.addEventListener("keyup", function(event) {
+        if (event.key === "Escape" && this.value.trim() === "") {
+            videoCards.forEach(card => {
+                card.style.display = "inline-block"; // or any other appropriate display value
+            });
+        }
+    });
+
 </script>
 
     </head>
@@ -81,6 +90,21 @@
         <div class="difficulty-level">Beginner </div>
         <div class="language">English</div>
         <div class="tags">Playlist</div>
+    </div>
+
+    <div class="video-background">
+        <div class="image-container">
+            <a href="https://youtu.be/lfmg-EJ8gm4?feature=shared"  target="_blank">
+                <img class="thumbnails" src="assets/thumbnails/hq720 (1).webp" alt="">
+                
+            </a> 
+        </div>
+        
+        <div class="video-title"> JavaScript</div>
+        <div class="duration">Duration: 6 Hours </div>
+        <div class="difficulty-level">Intermediate </div>
+        <div class="language">English</div>
+        
     </div>
 
 </div>
