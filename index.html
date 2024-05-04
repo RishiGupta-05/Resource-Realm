@@ -9,6 +9,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchInput = document.getElementById("searchInput");
+        const videoCards = document.querySelectorAll(".video-background");
+
+        searchInput.addEventListener("input", function() {
+            const query = this.value.trim().toLowerCase();
+            videoCards.forEach(card => {
+                const title = card.querySelector(".video-title").textContent.toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
+
     </head>
 
     <body>
@@ -22,7 +42,7 @@
     </div>
 
     <div class="right-section">
-        <input type="text" placeholder="Looking for a resource?">
+        <input type="text" id="searchInput" placeholder="Looking for a resource?">
         <button class="search-button">
             Search
         </button>
@@ -34,14 +54,34 @@
 
 
 <div class="video-cards">
-        <a href=https://www.youtube.com/watch?v=G3e-cpL7ofc"  target="_blank">
-            <img class="thumbnails" src="assets/thumbnails/hq720.webp" alt="">
-            
-        </a> 
-        <div class="video-info"> HTML + CSS</div>
+    <div class="video-background">
+        <div class="image-container">
+            <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc"  target="_blank">
+                <img class="thumbnails" src="assets/thumbnails/hq720.webp" alt="">
+                
+            </a> 
+        </div>
+        
+        <div class="video-title"> HTML + CSS</div>
         <div class="duration">Duration: 6 Hours 31 minutes </div>
         <div class="difficulty-level">Beginner </div>
-        <div class="lanuguage">English</div>
+        <div class="language">English</div>
+    </div>
+       
+    <div class="video-background">
+        <div class="image-container">
+            <a href="https://www.youtube.com/watch?v=QsrQV0wXh2E&list=PLQkwcJG4YTCRSQikwhtoApYs9ij_Hc5Z9"  target="_blank">
+                <img class="thumbnails" src="assets/thumbnails/hqdefault.jpg" alt="">
+                
+            </a> 
+        </div>
+        
+        <div class="video-title"> Kotlin</div>
+        <div class="duration">Duration: 6 Hours </div>
+        <div class="difficulty-level">Beginner </div>
+        <div class="language">English</div>
+        <div class="tags">Playlist</div>
+    </div>
 
 </div>
 
