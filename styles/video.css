@@ -1,0 +1,31 @@
+.video-cards{
+    padding: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    
+}
+
+.thumbnails{
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(0, 255, 195);
+}
+
+.video-info{
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.diffculty-level{
+    display: inline-block;
+}
+
+.duration{
+    display: inline-block;
+}
+
+.language{
+    display: inline-block;
+}
